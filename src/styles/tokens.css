@@ -1,0 +1,13 @@
+:root {
+  /* Temporary scaffold values. Visual identity awaits the design references. */
+  --font-body: system-ui, sans-serif;
+  --color-text: #20252b;
+  --color-background: #ffffff;
+  --color-muted: #454f5c;
+  --color-link: #174ea6;
+  --color-border: #c8cdd3;
+  --space-small: 0.5rem;
+  --space-medium: 1rem;
+  --space-large: 2rem;
+  --content-width: 70rem;
+}

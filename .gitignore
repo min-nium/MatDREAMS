@@ -1,0 +1,43 @@
+# Dependencies, compiled output, test reports, and local caches
+node_modules/
+dist/
+coverage/
+.vite/
+*.tsbuildinfo
+*.log
+npm-debug.log*
+
+# Local environment and credentials (only intentionally public VITE_* values)
+.env
+.env.*
+!.env.example
+.npmrc
+*.pem
+*.key
+*.p12
+*.pfx
+credentials*.json
+service-account*.json
+.aws/
+.ssh/
+
+# Private research inputs; approved public exports require review, not unignoring
+/research/
+/private/
+/private-data/
+/research-data/
+/data/
+/imports/
+/exports/
+/cache/
+/caches/
+**/5_LLMforCCAs/
+*.pdf
+
+# Local tooling and editor state
+.agents/
+.codex/
+.DS_Store
+.idea/
+.vscode/
+*.local
