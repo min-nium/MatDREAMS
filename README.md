@@ -11,6 +11,16 @@ Supports for the 26 October 2026 faculty demonstration. RHEA uses the existing
 frozen production v4 research graph; Ni Superalloy is pending integration.
 No research dataset is approved for public redistribution.
 
+## Public presentation preview
+
+The public build preserves the approved homepage and eight routes, with authored
+explanations of the System Chart workflow and clearly labeled unavailable states
+for private scientific data. It publishes no graph records, evidence quotations,
+research statistics, source documents or analysis figures. Production excludes
+the local research implementation entirely. See [public preview and deployment
+instructions](docs/PUBLIC_PREVIEW.md) for the GitHub Pages workflow, artifact audit
+and owner-side Pages setting. Verify the live URL before using it in slides.
+
 ## Local faculty demonstration
 
 ```sh

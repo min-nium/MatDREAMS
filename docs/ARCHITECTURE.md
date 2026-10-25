@@ -7,6 +7,12 @@ the existing scientific application into the seven scientific/support pages.
 
 ## Local faculty demonstration boundary
 
+Public production builds use the explicit page/provider replacements in
+`vite.config.ts`. These exclude the private research module tree and present
+authored public explanations in the existing routes. A module guard and complete
+artifact audit prevent accidental inclusion of the local client, data endpoint
+strings or unapproved artifacts. See [PUBLIC_PREVIEW.md](PUBLIC_PREVIEW.md).
+
 `npm run dev:research` starts one Vite process on `127.0.0.1:5177`. The
 development-only plugin in `tools/local-research.ts` serves an exact-resource
 allowlist beneath `/__matdreams_local__/`. It verifies the frozen production v4
