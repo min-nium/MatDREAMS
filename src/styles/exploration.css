@@ -1,0 +1,74 @@
+.term-browser,
+.scenario-workspace { margin-top: var(--space-7); }
+
+.term-browser__controls,
+.scenario-controls { display: flex; flex-wrap: wrap; align-items: end; gap: var(--space-4); margin-bottom: var(--space-5); }
+.term-browser__controls label,
+.scenario-controls label { display: grid; gap: var(--space-2); min-width: 12rem; flex: 1; }
+.term-browser input,
+.term-browser select,
+.scenario-workspace input,
+.scenario-workspace select { width: 100%; min-height: 44px; padding: 10px 12px; color: var(--ink); background: var(--surface); border: 1px solid var(--rule-3); font: inherit; }
+
+.term-browser__columns { display: grid; grid-template-columns: minmax(16rem, 0.85fr) minmax(0, 1.5fr); gap: var(--space-6); align-items: start; }
+.term-browser__index { max-height: 42rem; overflow: auto; border-top: 1px solid var(--rule-2); }
+.term-browser__entry { display: block; width: 100%; min-height: 56px; padding: var(--space-3) var(--space-2); border: 0; border-bottom: 1px solid var(--rule-2); background: transparent; color: var(--ink); text-align: left; font: inherit; cursor: pointer; }
+.term-browser__entry[aria-pressed='true'] { border-left: 3px solid var(--select); padding-left: calc(var(--space-2) - 3px); background: var(--surface); }
+.term-browser__entry small { display: block; margin-top: var(--space-1); font: var(--text-label-sm)/1.4 var(--font-mono); color: var(--ink-2); }
+.term-detail { min-width: 0; padding-left: var(--space-5); border-left: 1px solid var(--rule-2); }
+.term-detail h2 { margin: 0 0 var(--space-3); font-size: var(--text-h2); overflow-wrap: anywhere; }
+.term-detail h3 { margin: var(--space-6) 0 var(--space-3); }
+.term-detail__prose { font: var(--text-prose)/1.7 var(--font-serif); max-width: var(--measure); }
+.term-detail__id,
+.scenario-id { font: var(--text-label-sm)/1.5 var(--font-mono); overflow-wrap: anywhere; color: var(--ink-2); }
+.term-detail dl { margin: var(--space-4) 0; }
+.term-detail dt { font: var(--text-label-sm)/1.5 var(--font-mono); text-transform: uppercase; margin-top: var(--space-3); color: var(--ink-2); }
+.term-detail dd { margin: var(--space-1) 0 0; overflow-wrap: anywhere; }
+.term-detail__reading-aid { border-top: 1px dashed var(--rule-2); padding-top: var(--space-4); margin-top: var(--space-5); }
+.term-detail__usage { padding-top: var(--space-4); border-top: 1px solid var(--rule-2); }
+.term-detail pre { max-height: 18rem; overflow: auto; white-space: pre-wrap; overflow-wrap: anywhere; padding: var(--space-3); background: var(--surface); }
+.term-pagination { display: flex; gap: var(--space-3); flex-wrap: wrap; margin-top: var(--space-4); }
+
+.scenario-notice { border-left: 3px dashed var(--rule-3); padding: var(--space-3) var(--space-4); background: var(--surface); }
+.scenario-selected { display: grid; grid-template-columns: 1fr 1fr; border-block: 1px solid var(--rule-2); margin: var(--space-5) 0; }
+.scenario-selected > div { min-width: 0; padding: var(--space-4); }
+.scenario-selected > div + div { border-left: 1px solid var(--rule-2); }
+.scenario-selected h3 { margin: var(--space-2) 0; overflow-wrap: anywhere; }
+.scenario-search-results { max-height: 18rem; overflow: auto; border-top: 1px solid var(--rule-2); margin-bottom: var(--space-5); }
+.scenario-search-result { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--space-3); padding: var(--space-3) 0; border-bottom: 1px solid var(--rule-2); }
+.scenario-search-result > div { flex: 1; min-width: 12rem; overflow-wrap: anywhere; }
+.scenario-search-result__actions { display: flex; flex-wrap: wrap; gap: var(--space-2); }
+.scenario-comparison { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-5); margin: var(--space-5) 0; }
+.scenario-comparison > section { min-width: 0; padding: var(--space-4); border: 1px solid var(--rule-2); background: var(--surface); }
+.scenario-comparison h3 { margin: var(--space-2) 0 var(--space-3); }
+.scenario-path { list-style: none; padding: 0; margin: 0; }
+.scenario-path > li { padding: var(--space-3) 0; border-bottom: 1px dashed var(--rule-2); overflow-wrap: anywhere; }
+.scenario-path .scenario-path__hypothesis { border-left: 3px dashed var(--rule-3); padding-left: var(--space-3); }
+.scenario-canvas { background: var(--canvas); color: var(--canvas-ink); padding: var(--space-4); margin-bottom: var(--space-4); overflow: auto; }
+.scenario-canvas svg { display: block; min-width: 18rem; width: 100%; }
+.scenario-canvas text { fill: var(--canvas-ink); font: 12px var(--font-sans); }
+.scenario-canvas rect { fill: var(--canvas-raised); stroke: var(--canvas-rule-2); }
+.scenario-canvas path { fill: none; stroke: var(--canvas-ink-2); }
+.scenario-canvas .hypothetical { stroke-dasharray: 5 4; }
+.scenario-canvas .highlighted { stroke: var(--canvas-select); stroke-width: 2; }
+.scenario-ledger { width: 100%; border-collapse: collapse; margin-top: var(--space-4); }
+.scenario-ledger caption { text-align: left; padding-bottom: var(--space-3); font-weight: 600; }
+.scenario-ledger th,
+.scenario-ledger td { padding: var(--space-3); text-align: left; vertical-align: top; border-bottom: 1px solid var(--rule-2); overflow-wrap: anywhere; }
+.scenario-ledger th { font: var(--text-label-sm)/1.5 var(--font-mono); text-transform: uppercase; }
+.scenario-ledger__wrap { overflow: auto; }
+.scenario-change-list { list-style: none; padding: 0; }
+.scenario-change-list li { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: var(--space-3); padding: var(--space-3) 0; border-bottom: 1px dashed var(--rule-2); }
+
+@media (max-width: 1000px) {
+  .term-browser__columns { grid-template-columns: 1fr; }
+  .term-browser__index { max-height: 24rem; }
+  .term-detail { border-left: 0; border-top: 1px solid var(--rule-2); padding: var(--space-5) 0 0; }
+  .scenario-comparison { grid-template-columns: 1fr; }
+}
+@media (max-width: 640px) {
+  .scenario-selected { grid-template-columns: 1fr; }
+  .scenario-selected > div + div { border-left: 0; border-top: 1px solid var(--rule-2); }
+  .term-browser__controls label,
+  .scenario-controls label { min-width: 100%; }
+}

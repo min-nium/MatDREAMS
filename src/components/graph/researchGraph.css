@@ -1,0 +1,19 @@
+.research-canvas { border: 1px solid var(--canvas-rule-2); margin-block: var(--space-4); overflow: hidden; }
+.research-canvas .canvas-controls { display: flex; flex-wrap: wrap; gap: .5rem; padding: .75rem; border-bottom: 1px solid var(--canvas-rule-2); font: .75rem var(--font-mono); }
+.research-canvas .canvas-controls button { padding: .35rem .65rem; border: 1px solid var(--canvas-rule-2); background: var(--canvas-raised); color: var(--canvas-ink); }
+.research-canvas .canvas-controls span { padding: .35rem; }
+.research-canvas svg { width: 100%; min-height: 25rem; display: block; touch-action: none; color: var(--canvas-ink-2); }
+.research-canvas .graph-column { fill: var(--canvas-raised); stroke: var(--canvas-rule); }
+.research-canvas .graph-role { fill: var(--canvas-ink-2); font: 12px var(--font-mono); }
+.research-canvas .graph-edge { cursor: pointer; }
+.research-canvas .graph-edge-line { fill: none; stroke: var(--canvas-ink-2); stroke-width: 1.5; }
+.research-canvas .graph-edge-hit { fill: none; stroke: transparent; stroke-width: 14; }
+.research-canvas .graph-node { cursor: pointer; }
+.research-canvas .graph-node rect { fill: var(--canvas); stroke: var(--canvas-rule-2); }
+.research-canvas .graph-node text { fill: var(--canvas-ink); font: 13px var(--font-sans); }
+.research-canvas .graph-node .graph-support { fill: var(--canvas-ink-2); font: 10px var(--font-mono); }
+.research-canvas .graph-node.is-selected rect, .research-canvas .graph-node:focus rect { stroke: var(--canvas-select); stroke-width: 3; }
+.research-canvas .graph-edge.is-selected .graph-edge-line, .research-canvas .graph-edge:focus .graph-edge-line { stroke: var(--canvas-select); stroke-width: 4; }
+.research-canvas .graph-node:focus, .research-canvas .graph-edge:focus { outline: none; }
+.research-canvas .canvas-controls button:focus-visible { outline: 2px solid var(--canvas-select); outline-offset: 3px; }
+.research-canvas > p { padding: 1rem; }

@@ -5,6 +5,7 @@ import { Wordmark } from '../components/ui/Wordmark'
 import { CURRENT_PROVENANCE } from '../components/ui/provenance'
 import type { MaterialSystem } from '../types/graph'
 import { useHashRoute } from './useHashRoute'
+import { ResearchProvider } from './ResearchContext'
 
 export function App() {
   const route = useHashRoute()
@@ -78,7 +79,7 @@ export function App() {
   }, [navOpen, closeNav])
 
   return (
-    <>
+    <ResearchProvider system={system}>
       <a
         className="skip-link"
         href="#main-content"
@@ -134,6 +135,6 @@ export function App() {
         </p>
         <p className="label-sm">No public research graph is loaded</p>
       </footer>
-    </>
+    </ResearchProvider>
   )
 }

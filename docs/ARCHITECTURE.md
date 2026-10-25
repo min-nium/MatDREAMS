@@ -2,7 +2,34 @@
 
 MatDREAMS is a static React application using strict TypeScript, Vite, npm, and
 ES modules. The initial scaffold establishes routes and a public-data boundary.
-It does not implement scientific graph exploration or the final design.
+The approved homepage remains unchanged. Explicit local research mode now adapts
+the existing scientific application into the seven scientific/support pages.
+
+## Local faculty demonstration boundary
+
+`npm run dev:research` starts one Vite process on `127.0.0.1:5177`. The
+development-only plugin in `tools/local-research.ts` serves an exact-resource
+allowlist beneath `/__matdreams_local__/`. It verifies the frozen production v4
+graph SHA, built client SHA, manifests, release identity, record counts, and
+references before accepting the existing derivative. Source documents have
+their current source SHA; frozen analysis and figures are manifest checked.
+
+The adapter reuses the existing `core.js` and `learning.js` as byte-verified
+presentation code, without an iframe or scientific regeneration. Full concept,
+role-node and family indexes load once; graph rendering is bounded and separate
+from indexed coverage. Selected-family evidence loads on demand. A shared
+research context avoids multiple data loads and withholds RHEA when Ni is selected.
+
+`src/types/research.ts` describes this local legacy presentation boundary. It is
+separate from the unchanged public v0.1 contract, types and approval checks.
+`src/data/researchClient.ts` rejects requests outside explicit development mode.
+Production and ordinary development never serve the private adapter. The server
+restricts Host, Origin, fetch-site, socket address, resource keys and filesystem
+access; it does not accept arbitrary paths, execute manual commands, or write
+research files. No new production backend or dependencies were introduced.
+
+See `LEGACY_FEATURE_INVENTORY.md` for exact source reuse and
+`MATDREAMS_FACULTY_DEMO_20261026.md` for operating instructions and validation.
 
 ## Structure and ownership
 
@@ -34,10 +61,11 @@ site. Hash routing keeps direct links usable without server rewrites, such as
 Reference public assets through Vite's base URL rather than assuming the site
 is hosted at `/`.
 
-The shell exposes eight placeholder pages. RHEA and Ni Superalloy are planned
-initial systems; their names do not imply that datasets are available. A future
-design pass will define visual identity, typography, layout, and the homepage
-tetrahedron after references and file ownership are supplied.
+The shell preserves all eight routes and the approved homepage design. The seven
+other sections provide the local scientific demonstration; public mode shows
+explicit unavailable states for private data. RHEA is available locally. Ni
+Superalloy has no validated integrated dataset or manual and never receives RHEA
+records under its label.
 
 ## Scientific-data boundary
 

@@ -11,6 +11,7 @@
   },
   "scripts": {
     "dev": "vite",
+    "dev:research": "vite --mode local-research --host 127.0.0.1 --strictPort",
     "build": "npm run typecheck && vite build",
     "preview": "vite preview",
     "typecheck": "tsc --noEmit",

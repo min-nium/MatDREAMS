@@ -13,6 +13,9 @@ Research Codex owns its pipeline, terminology normalization, evidence integrity,
 validation, convergence analysis, scientific documentation, and future exports.
 Website work must never move, delete, edit, or commit files there, or alter its
 remote. Do not add it as a submodule, symlink, workspace dependency, or build input.
+The owner-authorized faculty demo may read existing frozen artifacts through the
+explicit loopback-only development adapter. This exception is local only; no
+research data may enter tracked assets, public exports, or production builds.
 
 ## Scientific data integrity
 

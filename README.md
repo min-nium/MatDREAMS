@@ -5,11 +5,32 @@ frontend scaffold, routing, shared UI, data-validation boundary, tests, and
 documentation. The scientific research pipeline remains in the independent
 `5_LLMforCCAs` repository.
 
-The initial application provides clearly labeled placeholders for Home,
-Materials, Definition, Relations, Engineering, Analysis, Manual, and Supports.
-RHEA and Ni Superalloy are the planned initial systems. Scientific content,
-public graph exports, the homepage tetrahedron, and final visual design are
-pending separate review and implementation.
+The approved homepage is preserved. An explicit loopback-only research mode
+provides Materials, Definition, Relations, Engineering, Analysis, Manual, and
+Supports for the 26 October 2026 faculty demonstration. RHEA uses the existing
+frozen production v4 research graph; Ni Superalloy is pending integration.
+No research dataset is approved for public redistribution.
+
+## Local faculty demonstration
+
+```sh
+npm ci
+npm run dev:research
+```
+
+Open [http://127.0.0.1:5177/MatDREAMS/](http://127.0.0.1:5177/MatDREAMS/).
+Stop with Ctrl+C. This single Vite process reads existing, checksum-pinned local
+research artifacts without modifying them. It requires the existing authorized
+research checkout and cached artifacts on this workstation. No scientific
+pipeline or extraction is run. Optional port: `MATDREAMS_DEMO_PORT=5178 npm run
+dev:research`. The adapter always binds to loopback.
+
+Private records and original evidence are fetched only in this explicit mode.
+They are never copied into frontend assets or production output. `npm run dev`
+and `npm run preview` disable research access; `npm run build`, including a build
+using `--mode local-research`, excludes the private adapter. Public export
+validation remains unchanged. See the [meeting guide](docs/MATDREAMS_FACULTY_DEMO_20261026.md)
+and [legacy reuse inventory](docs/LEGACY_FEATURE_INVENTORY.md).
 
 ## Requirements
 

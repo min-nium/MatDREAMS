@@ -9,7 +9,10 @@
 | Claude Design | Bounded visual tasks after design references and file scope are supplied: visual identity, typography and layout, navigation, homepage tetrahedron design, animation and interaction design, and responsive and accessible components. |
 
 Website work must never move, delete, edit, or commit research-repository files,
-or alter its remote. The website cannot depend on that checkout. Public exports
+or alter its remote. The public website cannot depend on that checkout. The
+owner-authorized local faculty demo uses an explicit read-only, loopback-only
+development adapter; see the meeting guide for startup and private-data limits.
+Public exports
 cross the boundary only through the approval procedure in
 [WEB_DATA_CONTRACT.md](WEB_DATA_CONTRACT.md).
 

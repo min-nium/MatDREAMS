@@ -16,12 +16,11 @@ describe('GitHub Pages hash routing', () => {
     }
   })
 
-  it.each(sections)('renders $label as a placeholder page', (route) => {
+  it.each(sections)('renders the $label section with a semantic heading', (route) => {
     const Page = route.component
     const html = renderToStaticMarkup(<Page />)
 
     expect(html).toContain(`>${route.label}</h1>`)
-    expect(html).toContain('Initialization placeholder')
   })
 
   it('accepts a trailing slash and rejects unknown paths', () => {
